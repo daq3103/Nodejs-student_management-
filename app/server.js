@@ -19,3 +19,6 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 
+// setup sequelize
+const {sequelize} = require('./model') ;
+sequelize.sync({alter:true});
